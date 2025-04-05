@@ -7,6 +7,10 @@ const express = require('express'),
     app = express(),
     port = 8000
 
+app.listen(8000, '0.0.0.0', () => {
+  console.log("Todolist running on http://0.0.0.0:8000");
+});
+
 app.use(bodyParser.urlencoded({
     extended: false
 }));
